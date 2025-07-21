@@ -7,7 +7,7 @@ const Signin = () => {
       <div className="w-[424px] h-[464px] flex flex-col items-center justify-start bg-white gap-[24px] py-[100px] ">
         
         <div className="text-[36px] font-extrabold text-center w-[265px] h-[50px]">Welcome Back</div>
-        <div className="text-[17px] font-weight:400; text-gray-500 text-center w-[294px] h-[30px]">
+        <div className="text-[20px] font-weight:400; text-gray-500 text-center ">
           Log in to explore the world of tutors
         </div>
 
@@ -51,12 +51,12 @@ const Signin = () => {
           Sign In
         </button>
 
-        <div className="text-[17px] w-[181px] h-[30px] text-[#5183F4] text-center font-semibold cursor-pointer hover:underline">
+        <div className="text-[20px]  text-[#5183F4] text-center font-semibold cursor-pointer hover:underline">
           I forgot my password
         </div>
 
       
-        <div className="text-[16px] w-[297px] h-[30px] text-black text-center">
+        <div className="text-[20px]  text-black text-center">
           Don’t have an account?
           <span className="text-[#5183F4] font-normal cursor-pointer hover:underline ml-1">Sign up</span>
         </div>
