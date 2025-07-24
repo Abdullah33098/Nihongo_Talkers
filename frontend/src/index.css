@@ -1,4 +1,78 @@
 @import "tailwindcss";
+
 body {
   font-family: 'League Spartan', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.form-wrapper {
+  @apply w-screen flex items-center justify-center;
+}
+
+.form-box {
+  @apply w-[424px] h-[544] flex flex-col items-center justify-start bg-white gap-[24px] py-[100px];
+}
+
+.form-heading {
+  @apply text-[36px] font-extrabold text-center w-[265px] h-[50px];
+}
+
+.form-label {
+  @apply text-[20px] text-black w-full text-left font-semibold mb-2;
+}
+
+.field-wrapper {
+  @apply relative w-full;
+}
+
+.icon-left {
+  @apply absolute left-4 top-1/2 transform -translate-y-1/2 w-[30px] h-[30px];
+}
+
+.icon-right {
+  @apply absolute right-4 top-1/2 transform -translate-y-1/2 w-[30px] h-[30px] cursor-pointer;
+}
+
+.form-input {
+  @apply w-[424px] h-[60px] rounded-[10px] border border-black py-3 pl-[50px] pr-[15px] text-base text-gray-900 focus:outline-none;
+}
+
+.btn-primary {
+  @apply w-[424px] h-[60px] rounded-[10px] bg-[#5183F4] text-white text-base font-semibold hover:bg-blue-600 transition duration-200 flex items-center justify-center;
+}
+
+.form-footer {
+  @apply text-[20px] text-black text-center;
+}
+
+.footer-link {
+  @apply text-[#5183F4] font-normal cursor-pointer hover:underline ml-1;
+}
+
+.role-selector .ant-select-selector {
+  padding-left: 60px !important;
+  height: 60px !important;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400 !important;
+  color: #B1B1B1 !important;
+  border: solid 1px black !important;
+  border-radius: 10px !important;
+  
+}
+
+.role-selector .ant-select-selection-placeholder {
+  color: #B1B1B1 !important;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.role-selector .ant-select-item-option-content {
+  @apply text-[#000000] text-xl;
+}
+ 
