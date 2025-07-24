@@ -109,7 +109,7 @@ const OTPScreen = () => {
 
         <button
           className="w-full h-[60px] rounded-[10px] bg-[#5183F4] text-white text-base font-semibold hover:bg-blue-600 transition duration-200"
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/signin")}
         >
           Reset Password
         </button>
