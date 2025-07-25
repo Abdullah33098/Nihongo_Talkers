@@ -27,7 +27,7 @@ const OTPScreen = () => {
 
   return (
     <div className=" flex items-center justify-center p-4">
-      <div className="w-full max-w-[424px] flex flex-col items-center justify-start bg-white gap-6 py-8 py-[100px] ">
+      <div className="w-full max-w-[424px] flex flex-col items-center justify-start bg-white gap-6  py-[100px] ">
         <h1 className="text-3xl md:text-[36px] font-extrabold text-center font-['Plus Jakarta Sans']">
           Reset Password
         </h1>

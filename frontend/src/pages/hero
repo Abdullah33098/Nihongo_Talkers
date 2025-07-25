@@ -1,0 +1,82 @@
+<div className="w-full h-[600px]  max-w-[1296px] bg-[#EBF5FE] rounded-[30px] relative ">
+        <div className="w-full max-w-[1236px] h-[540px] gap-6 flex py-[30px] px-[30px]">
+          {/* Left Section: Text + Filters */}
+          <div className="w-[660px] h-[266px] pt-[60px] gap-2.5">
+            <h1 className=" font-extrabold text-[60px] w-[606px] mt-10">
+              Need A Tutor?
+              <br />
+              WE CAN HELP.
+            </h1>
+            <div className=" font-normal text-[20px] text-[#717171]">
+              Compare and find the best tutors to fit your needs.
+            </div>
+            <div className="px-[15px] py-[30px] bg-white rounded-[30px] gap-[15px] absolute bottom-0 ">
+              <div className="mt-6 flex items-end gap-4 bg-white rounded-[30px] px-6 py-4 shadow-md">
+                {/* Area */}
+                <div className="flex flex-col w-[200px]">
+                  <label className="text-[16px] font-medium mb-1">Area</label>
+                  <select className="rounded-full border border-gray-300 px-4 py-2 text-gray-500 focus:outline-none">
+                    <option>Any</option>
+                    <option>Lahore</option>
+                    <option>Karachi</option>
+                    <option>Islamabad</option>
+                  </select>
+                </div>
+
+                {/* Price */}
+                <div className="flex flex-col w-[200px]">
+                  <label className="text-[16px] font-medium mb-1">Price</label>
+                  <select className="rounded-full border border-gray-300 px-4 py-2 text-gray-500 focus:outline-none">
+                    <option>Any</option>
+                    <option>Below 1000</option>
+                    <option>1000 - 2000</option>
+                    <option>2000+</option>
+                  </select>
+                </div>
+
+                {/* Gender */}
+                <div className="flex flex-col w-[200px]">
+                  <label className="text-[16px] font-medium mb-1">Gender</label>
+                  <select className="rounded-full border border-gray-300 px-4 py-2 text-gray-500 focus:outline-none">
+                    <option>Any</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+
+                {/* Button */}
+                <button className="bg-[#5183F4] text-white font-medium rounded-full px-6 py-2 text-[16px] flex items-center gap-2">
+                  <span className="text-lg">
+                    <img
+                      src="/search-icon.svg"
+                      alt="Search Icon"
+                      className="w-5 h-5"
+                    />
+                  </span> Find Now
+                </button>
+              </div>
+            </div>
+          </div>
+          {/* Right Section: Images */}
+          <div className="flex gap-4 items-start">
+            <img
+              src="1.jpg"
+              alt="Tutor"
+              className="w-[239px] h-[330px] rounded-[20px] object-cover-centre"
+            />
+
+            <div className="flex flex-col gap-4">
+              <img
+                src="3.png"
+                alt="Tutor Small"
+                className="w-[234px] h-[168px] rounded-[20px] border object-cover"
+              />
+              <img
+                src="2.jpg"
+                alt="Tutor Medium"
+                className="w-[234px] h-[314px] rounded-[20px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
