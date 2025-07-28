@@ -105,7 +105,7 @@ const TutorCard = ({ tutor }) => (
 const TutorsSection = () => (
   <div className="py-[60px] bg-white">
     <div className="max-w-[1440px] mx-auto">
-      <div className="mb-12 max-w-[1090px] pl-[60px]">
+      <div className="mb-12 max-w-[1018px] pl-[60px]">
         <h2 className="text-[48px] font-extrabold leading-snug ">
           Meet the most qualified <span className="text-blue-500">Tutors.</span>
         </h2>
