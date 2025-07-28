@@ -1,0 +1,3 @@
+
+ssh-keygen -t ed25519 -C "abdullah33098@gmail.com"
+ssh-keygen -t ed25519 -C "abdullah33098@gmail.com".pub
