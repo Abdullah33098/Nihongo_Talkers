@@ -88,15 +88,17 @@ const TutorCard = ({ tutor }) => (
       <div className="flex-grow" />
     </div>
 
-    <Button
-      icon={<ShoppingOutlined />}
-      type="primary"
-      className="!w-full !h-[44px] !bg-blue-500 hover:!bg-blue-600 text-white 
-                 !rounded-none !px-[60px] !py-[10px] 
-                 flex items-center justify-center gap-[16px] border-none shadow-none"
-    >
-      Add to Cart
-    </Button>
+   <Button
+  type="primary"
+  className="!w-full !h-[44px] !bg-blue-500 hover:!bg-blue-600 text-white 
+             !rounded-none !px-[60px] !py-[10px] 
+             flex items-center justify-center gap-[16px] border-none shadow-none"
+>
+  <img src="shopping-bag1.svg" alt="cart" className="w-6 h-6" />
+  Add to Cart
+</Button>
+
+
   </Card>
 );
 
@@ -117,9 +119,9 @@ const TutorsSection = () => (
       {/* Swiper Slider */}
       <Swiper
         spaceBetween={20}
-        slidesPerView={1}
+        slidesPerView={2} 
         breakpoints={{
-          640: { slidesPerView: 3 },
+            640: { slidesPerView: 1 },
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
           1280: { slidesPerView: 5 },
