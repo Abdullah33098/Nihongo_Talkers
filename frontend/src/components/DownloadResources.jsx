@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaUser, FaEnvelope } from "react-icons/fa";
 
 const DownloadResources = () => {
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
     return (
         <section className="max-w-7xl mx-auto py-16 px-4 relative">
             <section className="relative bg-blue-600 rounded-3xl overflow-hidden">
@@ -23,16 +37,19 @@ const DownloadResources = () => {
                                     <div className="relative">
                                         <input
                                             id="FirstName"
-                                            className="peer w-full px-4 py-3 pl-10 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent"
+                                            className="peer w-full px-4 py-3 pl-10 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                                             type="text"
                                             name="firstName"
-                                            placeholder="First Name"
+                                            placeholder=" "
+                                            value={formData.firstName}
+                                            onChange={handleChange}
                                         />
                                         <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                                         <label
                                             htmlFor="FirstName"
-                                            className="absolute left-10 top-1/2 transform -translate-y-1/2 text-gray-400 transition-all duration-200 
-                                            peer-focus:top-0 peer-focus:text-xs peer-focus:text-blue-500 peer-focus:translate-y-0"
+                                            className={`absolute left-10 transition-all duration-200 
+                                                ${formData.firstName || 'peer-focus:top-0 peer-focus:text-xs peer-focus:text-gray-500 peer-focus:translate-y-0'}
+                                                ${formData.firstName ? 'top-0 text-xs text-gray-500 translate-y-0' : 'top-1/2 -translate-y-1/2 text-gray-400'}`}
                                         >
                                             First Name
                                         </label>
@@ -44,16 +61,19 @@ const DownloadResources = () => {
                                     <div className="relative">
                                         <input
                                             id="LastName"
-                                            className="peer w-full px-4 py-3 pl-10 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent"
+                                            className="peer w-full px-4 py-3 pl-10 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                                             type="text"
                                             name="lastName"
-                                            placeholder="Last Name"
+                                            placeholder=" "
+                                            value={formData.lastName}
+                                            onChange={handleChange}
                                         />
                                         <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                                         <label
                                             htmlFor="LastName"
-                                            className="absolute left-10 top-1/2 transform -translate-y-1/2 text-gray-400 transition-all duration-200 
-                                            peer-focus:top-0 peer-focus:text-xs peer-focus:text-blue-500 peer-focus:translate-y-0"
+                                            className={`absolute left-10 transition-all duration-200 
+                                                ${formData.lastName || 'peer-focus:top-0 peer-focus:text-xs peer-focus:text-gray-500 peer-focus:translate-y-0'}
+                                                ${formData.lastName ? 'top-0 text-xs text-gray-500 translate-y-0' : 'top-1/2 -translate-y-1/2 text-gray-400'}`}
                                         >
                                             Last Name
                                         </label>
@@ -68,16 +88,19 @@ const DownloadResources = () => {
                                     <div className="relative">
                                         <input
                                             id="Email"
-                                            className="peer w-full px-4 py-3 pl-10 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-transparent"
+                                            className="peer w-full px-4 py-3 pl-10 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                                             type="email"
                                             name="email"
-                                            placeholder="Email"
+                                            placeholder=" "
+                                            value={formData.email}
+                                            onChange={handleChange}
                                         />
                                         <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                                         <label
                                             htmlFor="Email"
-                                            className="absolute left-10 top-1/2 transform -translate-y-1/2 text-gray-400 transition-all duration-200 
-                                            peer-focus:top-0 peer-focus:text-xs peer-focus:text-blue-500 peer-focus:translate-y-0"
+                                            className={`absolute left-10 transition-all duration-200 
+                                                ${formData.email || 'peer-focus:top-0 peer-focus:text-xs peer-focus:text-gray-500 peer-focus:translate-y-0'}
+                                                ${formData.email ? 'top-0 text-xs text-gray-500 translate-y-0' : 'top-1/2 -translate-y-1/2 text-gray-400'}`}
                                         >
                                             Email
                                         </label>

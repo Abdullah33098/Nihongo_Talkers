@@ -91,7 +91,7 @@ const HowItWorks = () => {
               </div>
 
               {/* Step badge - desktop only */}
-              <div className="hidden md:flex absolute left-1/2 -ml-10 top-1/2 -mt-8 items-center justify-center w-20 h-10 rounded-full bg-[#EBF5FE] text-black font-normal text-[16px]">
+              <div className="hidden md:flex absolute left-1/2 -ml-10 top-[100px] -mt-6 items-center justify-center w-20 h-10 rounded-full bg-[#EBF5FE] text-black font-normal text-[16px]">
                 Step {step.id}
               </div>
             </div>
