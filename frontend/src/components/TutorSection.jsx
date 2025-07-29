@@ -115,13 +115,15 @@ const TutorsSection = () => (
           supporting and empowering learners on their path to success.
         </p>
       </div>
-
+    </div>
       {/* Swiper Slider */}
+      <div className="w-full bg-white">                                                
       <Swiper
-        spaceBetween={20}
-        slidesPerView={2} 
+        spaceBetween={24}
+        slidesPerView={1} 
         breakpoints={{
-            640: { slidesPerView: 1 },
+          536: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
           768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
           1280: { slidesPerView: 5 },
@@ -135,7 +137,7 @@ const TutorsSection = () => (
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </div>                                            
   </div>
 );
 
