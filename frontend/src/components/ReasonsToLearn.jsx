@@ -29,7 +29,7 @@ const ReasonsToLearn = () => {
     <section className="bg-slate-100 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row">
-          {/* Image Section */}
+         
           <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <img
               src="https://developement.d1oq8jxq519ok1.amplifyapp.com/_next/image?url=%2Fassets%2Fimages%2FReasonToLearn%2Fimage-01.png&w=640&q=75"
@@ -39,14 +39,13 @@ const ReasonsToLearn = () => {
             />
           </div>
 
-          {/* Text Content Section */}
+          
           <div className="w-full md:w-1/2 md:pl-8 flex flex-col items-start justify-center">
             <h2 className="text-5xl font-extrabold mb-8">
                 <span className="font-bold">4 reasons to learn on</span>
                <br /> <span className="text-blue-600">Nihongo Talkers</span>
             </h2>
 
-            {/* Reasons List */}
             <div className="space-y-8">
               {reasons.map((reason, index) => (
                 <div key={index} className="flex items-start">

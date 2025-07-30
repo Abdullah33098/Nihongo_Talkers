@@ -6,6 +6,7 @@ import Signup from "./pages/auth/Signup";
 import Forgotpassword from "./pages/auth/Forgotpassword";
 import OTPScreen from "./pages/auth/OTPScreen";
 import Home from "./pages/Home";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <Router>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/forgot-password" element={<Forgotpassword />} />
         <Route path="/otp" element={<OTPScreen />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

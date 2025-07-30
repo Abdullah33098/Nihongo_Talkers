@@ -37,7 +37,7 @@ const Navbar = () => {
   );
 
   const navItems = [
-    // key:01,02,03,04,05 => link"/""
+ 
     { label: 'Find Tutor' },
     { label: 'How It Works' },
     { label: 'Pricing' },
@@ -47,8 +47,7 @@ const Navbar = () => {
   return (
     <div className="w-full flex items-center justify-center h-[80px] bg-white">
       <div className="w-full max-w-[1320px] flex items-center justify-between px-4 md:px-[60px] relative">
-        {/* Mobile Hamburger */}
-        {/* Mobile Hamburger */}
+     
 <div className="lg:hidden flex items-center">
   <button
     onClick={() => setMobileMenuVisible(true)}
@@ -61,7 +60,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="flex items-center justify-center flex-grow lg:flex-grow-0">
-          <img src="/レイヤー_1.svg" alt="Logo" className="w-[120px] md:w-[145px] h-[40px] md:h-[50px]" />
+          <img src="logo.svg" alt="Logo" className="w-[120px] md:w-[145px] h-[40px] md:h-[50px]" />
         </div>
 
         {/* Desktop Nav */}
@@ -78,7 +77,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Desktop Actions */}
+        
         <div className="hidden lg:flex items-center space-x-2 xl:space-x-2 2xl:space-x-6">
           <div className="border rounded-full p-2 cursor-pointer hover:bg-gray-100">
             <img src="shopping-bag.svg" alt="Cart" className="w-[32px] h-[32px]" />
@@ -100,7 +99,7 @@ const Navbar = () => {
           </Button>
         </div>
 
-        {/* Mobile Profile (Right Side Avatar) */}
+       
         <div className="lg:hidden flex items-center">
           <Dropdown overlay={userMenu} trigger={['click']} placement="bottomRight">
             <div className="flex items-center p-2 cursor-pointer hover:bg-gray-100">
@@ -109,7 +108,7 @@ const Navbar = () => {
           </Dropdown>
         </div>
 
-        {/* Mobile Drawer */}
+      
         <Drawer
   placement="left"
   width={428}
@@ -191,3 +190,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

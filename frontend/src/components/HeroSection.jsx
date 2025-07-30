@@ -150,7 +150,7 @@ const HeroSection = () => {
                     {/* User Image */}
                     <div className="h-80 relative inline-block">
                         <img
-                            src="https://developement.d1oq8jxq519ok1.amplifyapp.com/assets/images/herosectionuser.png"
+                            src="2.jpg"
                             alt="User"
                             className="h-full w-auto object-cover"
                         />

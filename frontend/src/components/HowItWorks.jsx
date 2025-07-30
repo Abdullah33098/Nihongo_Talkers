@@ -31,18 +31,18 @@ const HowItWorks = () => {
 
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-4 lg:px-8 py-12">
         <h2 className="text-4xl font-bold text-center mb-16">
           How it <span className="text-blue-600">Works</span>
         </h2>
 
         <div className="relative">
-          {/* Timeline line - mobile only */}
+        
           <div className="absolute left-0 top-0 h-full w-[46px] bg-transparent md:hidden">
             <div className="w-0.5 bg-[#B1B1B1] h-full mx-auto"></div>
           </div>
 
-          {/* Timeline line - desktop only */}
+         
           <div className="hidden md:block absolute left-1/2 top-10 md:top-28 h-[calc(100%-260px)] w-0.5 bg-[#B1B1B1] -ml-0.5"></div>
 
           {steps.map((step, index) => (
@@ -50,17 +50,16 @@ const HowItWorks = () => {
               key={step.id}
               className={`relative mb-16 md:mb-20 last:mb-0 ${index % 2 === 0 ? "md:flex" : "md:flex md:flex-row-reverse"}`}
             >
-              {/* Step badge - mobile only */}
-            {/* Mobile layout: side-by-side */}
+           
 <div className="md:hidden flex flex-row gap-[24px] items-start">
-  {/* Step badge on the left */}
+
   <div className="w-[46px] flex justify-center">
     <div className="w-12 h-12 rounded-full bg-[#EBF5FE] flex items-center justify-center text-[20px] font-semibold text-black">
       {step.id}
     </div>
   </div>
 
-  {/* Content + Image on the right */}
+  
   <div className="w-[328px] flex flex-col gap-[40px]">
     <div className="text-start">
       <p className="font-normal text-[20px] leading-relaxed">{step.title}</p>
@@ -75,7 +74,6 @@ const HowItWorks = () => {
   </div>
 </div>
 
-              {/* Desktop layout: unchanged */}
               <div className={`hidden md:block md:w-2/5 ${index % 2 === 0 ? "md:mr-auto" : "md:ml-auto"}`}>
                 <div className="py-6 rounded-lg flex text-start">
                   <p className="text-xl">{step.title}</p>
@@ -91,9 +89,10 @@ const HowItWorks = () => {
               </div>
 
               {/* Step badge - desktop only */}
-              <div className="hidden md:flex absolute left-1/2 -ml-10 top-[100px] -mt-6 items-center justify-center w-20 h-10 rounded-full bg-[#EBF5FE] text-black font-normal text-[16px]">
-                Step {step.id}
-              </div>
+              <div className="hidden md:flex absolute top-[112px] left-1/2 -translate-x-1/2 items-center justify-center w-20 h-10 rounded-full bg-[#EBF5FE] text-black font-normal text-[16px] z-10">
+  Step {step.id}
+</div>
+
             </div>
           ))}
         </div>
