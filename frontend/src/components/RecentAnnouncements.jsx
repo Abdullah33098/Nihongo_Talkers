@@ -33,7 +33,7 @@ const RecentAnnouncements = () => {
 
   return (
     <section className="py-[30px]  pl-[15px] bg-gray-50">
-      <div className="mx-auto max-w-[428px] sm:max-w-7xl">
+      <div className="mx-auto max-w-[550px] sm:max-w-7xl">
         <div className="flex flex-col gap-[10px] lg:flex-row lg:gap-8">
           {/* Announcements */}
           <div className="w-full lg:w-7/12">
@@ -48,7 +48,7 @@ const RecentAnnouncements = () => {
 
             <div className="space-y-4">
               {announcements.map((item, index) => (
-                <div key={index} className=" overflow-hidden  bg-white">
+                <div key={index} className=" overflow-hidden rounded-lg  bg-white">
                   <button
                     className="flex items-center w-full text-left"
                     onClick={() => toggleAccordion(index)}
