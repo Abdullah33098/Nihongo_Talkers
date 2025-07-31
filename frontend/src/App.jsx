@@ -7,12 +7,13 @@ import Forgotpassword from "./pages/auth/Forgotpassword";
 import OTPScreen from "./pages/auth/OTPScreen";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import About_us from "./pages/About_us";
 const App = () => {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<About_us />} />
         <Route path="/Signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/forgot-password" element={<Forgotpassword />} />
