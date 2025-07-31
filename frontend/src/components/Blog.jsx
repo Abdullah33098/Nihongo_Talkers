@@ -104,8 +104,8 @@ const Blog = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
       
           <div className="text-left order-1 md:order-1 mb-6 md:mb-0">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-black">
-              From Our <span className="text-blue-500">Blog</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-[#181A20]">
+              From Our <span className="text-[#5183F4]">Blog</span>
             </h2>
             <p className="text-gray-600 mt-2">
               Latest insights and tips on education and tutoring

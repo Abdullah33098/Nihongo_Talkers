@@ -87,7 +87,7 @@ const TutorCard = ({ tutor }) => (
 
     <Button
       type="primary"
-      className="!w-full !h-[44px] !bg-blue-500 hover:!bg-blue-600 text-white 
+      className="!w-full !h-[44px] !bg-[#5183F4] hover:!bg-blue-600 text-white 
                  !rounded-none !px-[60px] !py-[10px] 
                  flex items-center justify-center gap-[16px] border-none shadow-none"
     >
@@ -101,10 +101,10 @@ const TutorsSection = () => (
   <div className="py-[60px] bg-white">
     <div className="max-w-[1440px] mx-auto">
       <div className="mb-12 max-w-[1018px] px-[20px] sm:pl-[60px]">
-        <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] font-extrabold leading-snug">
-          Meet the most qualified <span className="text-blue-500">Tutors.</span>
+        <h2 className="text-[32px] sm:text-[40px] lg:text-[48px] text-[#181A20] font-extrabold leading-snug">
+          Meet the most qualified <span className="text-[#5183F4]">Tutors.</span>
         </h2>
-        <p className="text-gray-500 font-normal text-[16px] sm:text-[18px] lg:text-[20px]">
+        <p className="text-[#717171] font-normal text-[16px] sm:text-[18px] lg:text-[20px]">
           Delve into the rich expertise and enthusiasm of our newest mentorship team members.
           Whether they're experienced experts or up-and-coming talents, our team is committed to
           supporting and empowering learners on their path to success.

@@ -42,8 +42,8 @@ const ReasonsToLearn = () => {
           
           <div className="w-full md:w-1/2 md:pl-8 flex flex-col items-start justify-center">
             <h2 className="text-5xl font-extrabold mb-8">
-                <span className="font-bold">4 reasons to learn on</span>
-               <br /> <span className="text-blue-600">Nihongo Talkers</span>
+                <span className="font-bold text-[#181A20]">4 reasons to learn on</span>
+               <br /> <span className="text-[#5183F4]">Nihongo Talkers</span>
             </h2>
 
             <div className="space-y-8">

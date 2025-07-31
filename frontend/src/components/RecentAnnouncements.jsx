@@ -38,8 +38,8 @@ const RecentAnnouncements = () => {
           {/* Announcements */}
           <div className="w-full lg:w-7/12">
             <div className="mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Recent <span className="text-blue-600">Announcements</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#181A20] mb-4">
+                Recent <span className="text-[#5183F4]">Announcements</span>
               </h2>
               <p className="text-gray-600">
                 Stay updated with our latest news and announcements in this section. Explore recent developments, events, and important information here.

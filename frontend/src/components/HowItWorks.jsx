@@ -32,8 +32,8 @@ const HowItWorks = () => {
   return (
     <section className="bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16">
-          How it <span className="text-blue-600">Works</span>
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-[#181A20] mb-12 sm:mb-16">
+          How it <span className="text-[#5183F4]">Works</span>
         </h2>
 
         <div className="relative">
