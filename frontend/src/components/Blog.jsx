@@ -100,9 +100,9 @@ const Blog = () => {
   return (
     <section className="w-full px-4 md:px-12 py-16 bg-white hidden md:block" aria-label="Blog section">
       <div className="max-w-7xl mx-auto">
-        {/* Header Row */}
+
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
-          {/* Title Left */}
+      
           <div className="text-left order-1 md:order-1 mb-6 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-extrabold text-black">
               From Our <span className="text-blue-500">Blog</span>
@@ -112,7 +112,7 @@ const Blog = () => {
             </p>
           </div>
 
-          {/* Navigation Right */}
+         
           {blogPosts.length > postsPerPage && (
             <div className="flex items-center gap-4 order-2 md:order-2">
               <button 
@@ -143,7 +143,7 @@ const Blog = () => {
           )}
         </div>
 
-        {/* Blog Cards */}
+     
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {visiblePosts.map((post) => (
             <article 
@@ -157,9 +157,7 @@ const Blog = () => {
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
                   loading="lazy"
                 />
-                <span className="absolute bottom-4 left-4 bg-blue-500 text-white text-xs px-2 py-1 rounded">
-                  {post.readTime}
-                </span>
+                
               </div>
               <div className="p-6">
                 <p className="text-sm text-blue-500 font-medium mb-2">{post.date}</p>

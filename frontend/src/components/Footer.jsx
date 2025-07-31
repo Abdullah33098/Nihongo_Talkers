@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-[#EBF5FE] pt-[60px] px-[24px] md:px-[60px] pb-[30px]">
       <div className="w-full max-w-[1440px] mx-auto flex flex-col gap-[24px]">
@@ -26,7 +29,7 @@ const Footer = () => {
               <p className="font-normal mb-6">Services</p>
               <ul className="space-y-[18px]">
                 <li>Find Tutors</li>
-                <li>About Us</li>
+                <li onClick={() => navigate('/about')}>About Us</li>
                 <li>Contact Us</li>
                 <li>FAQ for tutors</li>
                 <li>FAQ for Students</li>
