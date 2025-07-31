@@ -9,11 +9,11 @@ const HeroSection = () => {
         <div className="lg:w-3/4 flex flex-col justify-between gap-6 relative">
     
           <div className="pt-12 lg:pt-[60px] w-[606px] px-[30px] lg:px-[30px] pb-8 flex flex-col gap-4">
-            <h1 className="text-gray-800 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.2] lg:leading-[80px] mb-0">
+            <h1 className="text-[#181A20]text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.2] lg:leading-[80px] mb-0">
               Need a Tutor?
               <br /> We can help.
             </h1>
-            <p className="text-gray-500 text-base lg:text-lg font-normal ml-0 lg:ml-4 leading-6 lg:leading-8">
+            <p className="text-[#717171] text-base lg:text-lg font-normal ml-0 lg:ml-4 leading-6 lg:leading-8">
               Compare and find the best tutors to fit your needs.
             </p>
           </div>
@@ -27,13 +27,13 @@ const HeroSection = () => {
           </div>
 
           <div className="bg-white w-[843px] rounded-tr-[30px]  relative z-[5]  px-[15px] pt-[30px] pb-[40px]" >
-  {/* Left accent */}
+  
   <div className="absolute left-0 top-[-200%] w-[30px] h-[134px] rounded-bl-3xl  z-[4] hidden lg:block"></div>
 
-  {/* Form in single line */}
+
   <form className="w-full bg-white rounded-2xl h-[134px]  shadow-[0_4px_40px_0_rgba(0,117,225,0.1)] flex flex-row items-center gap-[15px] relative z-[2]">
     
-    {/* Area */}
+    
     <div className="flex flex-col gap-1.5 w-[200px] pl-[15px]">
       <label className="pl-[15px] text-[#181a20] text-[16px] font-normal leading-[24px]">
         Area
@@ -52,7 +52,6 @@ const HeroSection = () => {
       </div>
     </div>
 
-    {/* Lesson Fee */}
     <div className="flex flex-col gap-1.5 w-[200px]">
       <label className="pl-[15px] text-[#181a20] text-[16px] font-normal leading-[24px]">
         Lesson Fee
@@ -71,7 +70,7 @@ const HeroSection = () => {
       </div>
     </div>
 
-    {/* Gender */}
+    
     <div className="flex flex-col gap-1.5 w-[200px]">
       <label className="pl-[15px] text-[#181a20] text-[16px] font-normal leading-[24px]">
         Gender
@@ -90,14 +89,14 @@ const HeroSection = () => {
       </div>
     </div>
 
-    {/* Button */}
+    
     <button className="min-w-[120px] text-white text-[16px] font-normal mt-6 py-3 px-6 flex justify-center items-center gap-1 rounded-full bg-[#5183f4] hover:bg-[#3a6bd8] transition-colors">
       <img src="search-icon.svg" alt="Search Icon" className="w-5 h-5" />
       Find Now
     </button>
   </form>
 
-  {/* Right accents */}
+
   <div className="absolute right-[-30px] bottom-[-0.7px] w-[30px] h-[80%] rounded-bl-3xl bg-[#ebf5fe] z-[4] border border-[#ebf5fe] hidden lg:block"></div>
   <div className="absolute right-[-20px] bottom-0 w-[30px] h-[70%] rounded-bl-3xl bg-white z-[1] hidden lg:block"></div>
 </div>
@@ -121,8 +120,7 @@ const HeroSection = () => {
       alt="User"
       className="h-full w-full object-cover rounded-2xl"
     />
-    
-    {/* Overlay Card */}
+   
     <div className="absolute w-full -bottom-10 2xl:-left-10 left-0 ">
       <img
         src="4.svg"
