@@ -37,17 +37,17 @@ const DownloadResources = () => {
                                     <div className="relative">
                                         <input
                                             id="FirstName"
-                                            className="peer w-full px-4 py-3 pl-10 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                                            className="peer w-full px-4 py-3 pl-16 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                                             type="text"
                                             name="firstName"
                                             placeholder=" "
                                             value={formData.firstName}
                                             onChange={handleChange}
                                         />
-                                        <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                                        <img src="Layer_1 (5).svg" className="absolute left-3 top-1/2 transform w-[30px] h-[30px] -translate-y-1/2 text-gray-400" />
                                         <label
                                             htmlFor="FirstName"
-                                            className={`absolute left-10 transition-all duration-200 
+                                            className={`absolute left-16 transition-all duration-200 
                                                 ${formData.firstName || 'peer-focus:top-0 peer-focus:text-xs peer-focus:text-gray-500 peer-focus:translate-y-0'}
                                                 ${formData.firstName ? 'top-0 text-xs text-gray-500 translate-y-0' : 'top-1/2 -translate-y-1/2 text-gray-400'}`}
                                         >
@@ -61,17 +61,17 @@ const DownloadResources = () => {
                                     <div className="relative">
                                         <input
                                             id="LastName"
-                                            className="peer w-full px-4 py-3 pl-10 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                                            className="peer w-full px-4 py-3 pl-16 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                                             type="text"
                                             name="lastName"
                                             placeholder=" "
                                             value={formData.lastName}
                                             onChange={handleChange}
                                         />
-                                        <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                                        <img src="Layer_1 (5).svg" className="absolute left-3 top-1/2 transform -translate-y-1/2 w-[30px] h-[30px] text-gray-400" />
                                         <label
                                             htmlFor="LastName"
-                                            className={`absolute left-10 transition-all duration-200 
+                                            className={`absolute left-16 transition-all duration-200 
                                                 ${formData.lastName || 'peer-focus:top-0 peer-focus:text-xs peer-focus:text-gray-500 peer-focus:translate-y-0'}
                                                 ${formData.lastName ? 'top-0 text-xs text-gray-500 translate-y-0' : 'top-1/2 -translate-y-1/2 text-gray-400'}`}
                                         >
@@ -88,17 +88,17 @@ const DownloadResources = () => {
                                     <div className="relative">
                                         <input
                                             id="Email"
-                                            className="peer w-full px-4 py-3 pl-10 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                                            className="peer w-full px-4 py-3 pl-16 rounded-lg border border-gray-300 bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500"
                                             type="email"
                                             name="email"
                                             placeholder=" "
                                             value={formData.email}
                                             onChange={handleChange}
                                         />
-                                        <FaEnvelope className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                                        <img src="mail.svg" className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                                         <label
                                             htmlFor="Email"
-                                            className={`absolute left-10 transition-all duration-200 
+                                            className={`absolute left-16 transition-all duration-200 
                                                 ${formData.email || 'peer-focus:top-0 peer-focus:text-xs peer-focus:text-gray-500 peer-focus:translate-y-0'}
                                                 ${formData.email ? 'top-0 text-xs text-gray-500 translate-y-0' : 'top-1/2 -translate-y-1/2 text-gray-400'}`}
                                         >

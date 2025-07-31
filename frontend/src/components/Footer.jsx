@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="flex-1 min-w-[140px]">
               <p className="font-normal mb-6">Contact</p>
               <div className="flex items-start gap-2">
-                <img src="/mail.svg" alt="Email Icon" className="w-5 h-5 mt-[2px]" />
+                <img src="mail1.svg" alt="Email Icon" className="w-5 h-5 mt-[2px]" />
                 <a href="mailto:info@nihongotalkers.com" className="hover:underline">
                   info@nihongotalkers.com
                 </a>

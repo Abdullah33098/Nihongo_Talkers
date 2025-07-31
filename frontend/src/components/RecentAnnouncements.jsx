@@ -86,7 +86,7 @@ const RecentAnnouncements = () => {
           </div>
 
           {/* Image */}
-         <div className="w-full lg:w-5/12 flex justify-center lg:justify-end items-center">
+         <div className="w-full lg:w-5/12 flex justify-center lg:justify-right items-center">
   <img
     src="RecentAnnouncements.jpg"
     alt="Announcement"
