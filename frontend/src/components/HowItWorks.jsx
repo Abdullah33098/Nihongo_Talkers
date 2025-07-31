@@ -75,7 +75,7 @@ const HowItWorks = () => {
               {/* Desktop view (500px and above) */}
               <div className={`hidden sm:block sm:w-2/5 ${index % 2 === 0 ? "sm:mr-auto" : "sm:ml-auto"}`}>
                 <div className="py-6 rounded-lg flex text-start">
-                  <p className="text-lg sm:text-xl">{step.title}</p>
+                  <p className="text-medium !text-[26px] sm:text-xl">{step.title}</p>
                 </div>
               </div>
 

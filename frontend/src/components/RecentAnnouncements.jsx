@@ -33,7 +33,7 @@ const RecentAnnouncements = () => {
 
   return (
     <section className="py-[30px]  pl-[15px] bg-gray-50">
-      <div className="mx-auto max-w-[550px] sm:max-w-7xl">
+      <div className="mx-auto sm:max-w-7xl">
         <div className="flex flex-col gap-[10px] lg:flex-row lg:gap-8">
           {/* Announcements */}
           <div className="w-full lg:w-7/12">
@@ -86,14 +86,15 @@ const RecentAnnouncements = () => {
           </div>
 
           {/* Image */}
-          <div className="w-full lg:w-5/12 flex justify-center items-center">
-            <img
+         <div className="w-full lg:w-5/12 flex justify-center lg:justify-end items-center">
+  <img
     src="RecentAnnouncements.jpg"
     alt="Announcement"
-    className="w-[596px] h-[620px] object-cover rounded-tl-[20px] rounded-bl-[20px]"
     loading="lazy"
+    className="w-full max-w-[596px] h-[620px] object-cover rounded-tl-[20px] rounded-bl-[20px]"
   />
-          </div>
+</div>
+
         </div>
       </div>
     </section>
