@@ -87,9 +87,28 @@ const BecomeTutor = () => {
       </div>
 
     <div className="w-full flex h-[718px] justify-center items-center py-[60px] ">
-        <div className="h-[598px] w-full bg-[#F7F7F7] p-[60px] justify-center items-center flex flex-col gap-4">
+        <div className="h-[598px] w-full bg-[#F7F7F7] p-[60px] justify-center items-center flex flex-col gap-6 px-3">
             <h1 className="text-5xl font-extrabold text-[#5183F4]">日本語講師募集中!</h1>
             <p className="text-[20px] text-normal text-[#181A20]">以下の条件に当てはまる方、大歓迎</p>
+            <div className="w-[1296px] h-[344px] flex flex-col lg:flex-row items-center justify-center gap-4">
+                <div className="flex flex-col gap-4 w-[306px] h-[344px] rounded-[10px] justify-center items-center bg-[#FFFFFF]">
+                    <h2 className="text-2xl font-bold text-[#181A20]">条件1</h2>
+                    <p className="text-[16px] text-[#717171]">日本語を母国語とする方</p>
+                </div>
+                <div className="flex flex-col gap-4 w-[306px] h-[344px] rounded-[10px] justify-center items-center bg-[#FFFFFF]">
+                    <h2 className="text-2xl font-bold text-[#181A20]">条件2</h2>
+                    <p className="text-[16px] text-[#717171]">オンラインでの指導経験がある方</p>
+                </div>
+                <div className="flex flex-col gap-4 w-[306px] h-[344px] rounded-[10px] justify-center items-center bg-[#FFFFFF]">
+                    <h2 className="text-2xl font-bold text-[#181A20]">条件3</h2>
+                    <p className="text-[16px] text-[#717171]">日本語教育に情熱を持っている方</p>
+                </div>
+                <div className="flex flex-col gap-4 w-[306px] h-[344px] rounded-[10px] justify-center items-center bg-[#FFFFFF]">
+                    <h2 className="text-2xl font-bold text-[#181A20]">条件4</h2>
+                    <p className="text-[16px] text-[#717171]">日本語教育に情熱を持っている方</p>
+                </div>
+            </div>
+
         </div>
     </div>
     </div>
