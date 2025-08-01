@@ -4,13 +4,13 @@ const testimonials = [
   {
     name: "Heather",
     location: "CA",
-    avatar: "https://i.pravatar.cc/100?img=12", // replace with actual image
-    quote: `I was hesitant to start learning Japanese online, but after my first session with my tutor here, I was pleasantly surprised. The tutor was patient, knowledgeable, and tailored the lessons to my specific needs and interests. From casual conversations to formal language structures, I felt supported every step of the way. Thanks to this platform, I'm now more confident in my speaking abilities and excited to continue my language.`,
+    avatar: "/Ellipse 9.svg", 
+    quote: `I was hesitant to start learning Japanese online, but after my first session with my tutor here, I was pleasantly surprised. The tutor was patient, knowledgeable, and tailored the lessons to my specific needs and interests. From casual conversations to formal language structures, I felt supported every step of the way. Thanks to this platform, I'm now more confident in my speaking abilities and excited to continue my language`,
   },
   {
     name: "Amanda",
     location: "CT",
-    avatar: "https://i.pravatar.cc/100?img=32",
+    avatar: "/Ellipse 9 (1).svg",
     quote: `Finding the right Japanese tutor was crucial for me, and I'm so glad I found this platform. My tutor not only helped me with grammar and vocabulary but also introduced me to colloquial expressions and real-life scenarios. Learning from a native speaker has made all the difference in my understanding and appreciation of the language. I couldn't have asked for a better learning experience. Arigatou gozaimasu!`,
   },
 ];
@@ -18,7 +18,7 @@ const testimonials = [
 const TestimonialCard = ({ name, location, avatar, quote }) => (
   <div className="bg-white rounded-2xl shadow-md p-8 flex-1 max-w-[550px] min-w-[280px] relative">
     <div className="flex items-center gap-4 mb-4 relative">
-      {/* Avatar */}
+      
       <div className="relative flex-shrink-0">
         <img
           src={avatar}
@@ -27,9 +27,9 @@ const TestimonialCard = ({ name, location, avatar, quote }) => (
         />
         
       </div>
-      {/* Name + Location */}
-      <div className="text-sm font-medium text-[#3B5BFF]">
-        {name} <span className="font-normal text-gray-700">{location}</span>
+      
+      <div className="text-[20px] font-medium text-[#5183F4]">
+        {name} <span className="font-normal text-[#5183F4]">{location}</span>
       </div>
        <div className="absolute top-0 right-0 text-[80px] text-[#cfdcff] font-bold select-none pointer-events-none leading-none">
         &ldquo;
@@ -37,9 +37,8 @@ const TestimonialCard = ({ name, location, avatar, quote }) => (
     </div>
      
 
-    {/* Quote */}
-    <div className="text-[14.5px] leading-relaxed text-[#4A4A4A] relative">
-    
+    <div className="text-[20px] font-normal leading-relaxed text-[#717171] relative">
+
       <p className="mt-1">{quote}</p>
     </div>
   </div>
@@ -58,8 +57,8 @@ const TestimonialsCarousel = () => {
 
   return (
     <div className="bg-[#F7F7F7] py-16 px-4">
-      <div className="max-w-[1200px] mx-auto flex flex-col items-center gap-10">
-        <h2 className="text-center text-3xl font-extrabold text-[#3B5BFF]">
+      <div className="max-w-[1440px] mx-auto flex flex-col items-center gap-10">
+        <h2 className="text-center text-[34px] font-extrabold text-[#5183F4]">
           Student Testimonials
         </h2>
 

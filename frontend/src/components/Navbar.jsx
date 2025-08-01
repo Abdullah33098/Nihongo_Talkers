@@ -92,6 +92,7 @@ const Navbar = () => {
           </Dropdown>
 
           <Button
+            onClick={() => window.location.href = '/become-tutor'}
             type="primary"
             className="!rounded-full font-medium text-[16px] !h-[50px] px-6"
           >
@@ -132,7 +133,7 @@ const Navbar = () => {
 
       {/* Logo */}
       <img
-        src="/レイヤー_1.svg"
+        src="logo.svg"
         alt="Logo"
         className="w-[100px] h-[36px] object-contain"
       />
