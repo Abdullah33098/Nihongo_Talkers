@@ -113,7 +113,7 @@ const TutorsSection = () => (
     </div>
     
     {/* Swiper Slider */}
-    <div className="w-full bg-white px-[20px] sm:px-[40px] lg:px-[60px]">                                                
+    <div className="w-full bg-white ">                                                
       <Swiper
         spaceBetween={24}
         slidesPerView={1}
