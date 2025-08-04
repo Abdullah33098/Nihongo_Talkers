@@ -51,7 +51,24 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <TestimonialsCarousel />
+      <TestimonialsCarousel
+        title="Student Testimonials"
+  testimonials={[
+    {
+      name: "Heather",
+      location: "CA",
+      avatar: "/Ellipse 9.svg",
+      quote: `I was hesitant to start learning Japanese online, but after my first session with my tutor here, I was pleasantly surprised. The tutor was patient, knowledgeable, and tailored the lessons to my specific needs and interests. From casual conversations to formal language structures, I felt supported every step of the way. Thanks to this platform, I'm now more confident in my speaking abilities and excited to continue my language`,
+    },
+    {
+      name: "Amanda",
+      location: "CT",
+      avatar: "/Ellipse 9 (1).svg",
+      quote: `Finding the right Japanese tutor was crucial for me, and I'm so glad I found this platform. My tutor not only helped me with grammar and vocabulary but also introduced me to colloquial expressions and real-life scenarios. Learning from a native speaker has made all the difference in my understanding and appreciation of the language. I couldn't have asked for a better learning experience. Arigatou gozaimasu!`,
+    },
+  ]}
+/>
+
 
 
       <section className="relative py-8 sm:py-16 mb-[30px] sm:mb-[60px]">

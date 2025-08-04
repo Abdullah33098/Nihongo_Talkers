@@ -1,12 +1,12 @@
 import React from "react";
 
-const BecomeTutor = () => {
+const BecomeTutor = ({title, description, label}) => {
     return (
         <section className="relative py-16">
-            {/* Background Image with Custom Gradient Overlay */}
+           
             <div className="absolute inset-0 z-0">
                 <div className="relative w-full h-full">
-                    {/* Gradient Overlay */}
+                   
                     <div
                         className="absolute inset-0"
                         style={{
@@ -15,7 +15,7 @@ const BecomeTutor = () => {
                         }}
                     ></div>
 
-                    {/* Background Image */}
+                   
                     <img
                         src="BecomeTutor.jpg"
                         alt="Become a Tutor"
@@ -25,20 +25,20 @@ const BecomeTutor = () => {
                 </div>
             </div>
 
-            {/* Content */}
+
             <div className="relative z-10">
                 <div className="container mx-auto px-4">
                     <div className="text-center flex flex-col items-center justify-center mx-auto h-full">
-                        <h2 className="text-4xl font-bold text-white mb-2">Become A Tutor</h2>
+                        <h2 className="text-4xl font-bold text-white mb-2">{title}</h2>
                         <p className="text-xl text-white mb-2 max-w-2xl">
-                            Fuel learning journeys, become a mentor of creativity; ignite minds, foster brilliance, shape futures
+                            {description}
                         </p>
                         <div className="mt-3">
                             <a
                                 href="/auth/signup"
                                 className="bg-white text-blue-600 hover:bg-blue-50 font-medium py-3 px-8 rounded-full transition duration-300 inline-block"
                             >
-                                Register Now
+                                {label}
                             </a>
                         </div>
                     </div>

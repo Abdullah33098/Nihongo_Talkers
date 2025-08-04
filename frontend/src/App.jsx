@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import About_us from "./pages/About_us";
 import BecomeTutor from "./pages/BecomeTutor";
+import FAQ from "./pages/FAQ";
 const App = () => {
   return (
     <Router>
@@ -21,6 +22,8 @@ const App = () => {
         <Route path="/otp" element={<OTPScreen />} />
         <Route path="/about" element={<About_us />} />
         <Route path="/become-tutor" element={<BecomeTutor />} />
+        <Route path="/faq" element={<FAQ />} />
+        {/* Add more routes as needed */}
       </Routes>
       <Footer />
     </Router>
