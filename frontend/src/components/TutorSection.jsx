@@ -135,7 +135,7 @@ const TutorsSection = () => (
       >
         {tutors.map((tutor, index) => (
           <SwiperSlide key={index} className="!h-auto py-2">
-            <div className="h-full px-2">
+            <div className="h-full ">
               <TutorCard tutor={tutor} />
             </div>
           </SwiperSlide>
