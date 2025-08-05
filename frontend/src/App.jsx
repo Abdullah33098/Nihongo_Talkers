@@ -11,6 +11,7 @@ import About_us from "./screens/About_us";
 import BecomeTutor from "./screens/BecomeTutor";
 import FAQ from "./screens/FAQ";
 import Contact_us from "./screens/Contact_us";
+import TutorSignup from "./screens/auth/TutorSignup";
 const App = () => {
   return (
     <Router>
@@ -25,7 +26,8 @@ const App = () => {
         <Route path="/become-tutor" element={<BecomeTutor />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact-us" element={<Contact_us />} />
-        {/* Add more routes as needed */}
+        <Route path="/tutor-signup" element={<TutorSignup />} />
+        
       </Routes>
       <Footer />
     </Router>

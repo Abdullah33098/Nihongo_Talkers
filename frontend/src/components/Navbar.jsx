@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
 
         {/* Logo */}
-        <div className="flex items-center justify-center flex-grow lg:flex-grow-0">
+        <div className="flex items-center justify-center flex-grow lg:flex-grow-0" onClick={() => navigate('/')}>
           <img
             src="logo.svg"
             alt="Logo"
