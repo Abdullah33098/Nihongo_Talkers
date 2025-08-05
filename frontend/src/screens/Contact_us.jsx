@@ -42,7 +42,7 @@ const ContactUs = () => {
         <div className="w-full max-w-[1320px] px-[60px] flex flex-col lg:flex-row rounded-[30px] overflow-hidden ">
         <div className="w-full !max-w-[1296px] flex flex-col lg:flex-row ">
           {/* Left side - Image */}
-          <div className="hidden lg:block w-full lg:w-[412px] bg-[#EBF5FE] ">
+          <div className="hidden lg:block w-full lg:w-[412px]  ">
             <img
               src="/contact.jpg"
               alt="Team members smiling and working together"
@@ -212,7 +212,7 @@ const ContactUs = () => {
 
       {/* Become a Tutor Section */}
       <div className="w-full py-8 md:py-[60px] relative overflow-hidden bg-white">
-        <div className="w-full max-w-[1320px] mx-auto px-[160px] sm:px-5 md:px-6 relative z-10">
+        <div className="w-full max-w-[1320px] mx-auto px-[60px] sm:px-5 md:px-[60px] relative z-10">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-8 py-8 md:py-[60px] px-6 sm:px-8 md:px-[50px] rounded-2xl md:rounded-[30px] bg-[#5183F4] text-white relative overflow-hidden">
             {/* Left: Text Content */}
             <div className="flex-1 z-20 text-center lg:text-left">
