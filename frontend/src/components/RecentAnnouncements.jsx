@@ -41,7 +41,7 @@ const RecentAnnouncements = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-[#181A20] mb-4">
                 Recent <span className="text-[#5183F4]">Announcements</span>
               </h2>
-              <p className="text-gray-600">
+              <p className="text-[#717171] text-[16px] md:text-[20px]">
                 Stay updated with our latest news and announcements in this section. Explore recent developments, events, and important information here.
               </p>
             </div>
@@ -53,7 +53,7 @@ const RecentAnnouncements = () => {
                     className="flex items-center w-full text-left"
                     onClick={() => toggleAccordion(index)}
                   >
-                    <div className="bg-blue-600 text-white rounded-l-lg p-6 text-center min-w-[90px]">
+                    <div className="bg-[#5183F4] text-white rounded-l-lg p-6 text-center min-w-[90px]">
                       <span className="block text-[26px] font-medium">{item.date}</span>
                       <span className="block font-medium text-[20px]">{item.month}</span>
                     </div>

@@ -18,7 +18,7 @@ const DownloadResources = () => {
 
     return (
         <section className="max-w-7xl mx-auto py-16 px-4 relative">
-            <section className="relative bg-blue-600 rounded-3xl overflow-hidden">
+            <section className="relative bg-[#5183F4] rounded-3xl overflow-hidden">
                 <div className="absolute inset-3 -right-1/2 top-0 opacity-20" />
                 
                 <header className="relative z-10 p-8 md:p-12">
@@ -110,7 +110,7 @@ const DownloadResources = () => {
                                 {/* Submit Button */}
                                 <div className="flex items-center">
                                     <button
-                                        className="w-full bg-white text-blue-600 hover:bg-blue-50 font-medium py-3 px-6 rounded-lg transition duration-300"
+                                        className="w-full bg-white text-[#5183F4] hover:bg-blue-50 font-medium py-3 px-6 rounded-lg transition duration-300"
                                         type="submit"
                                     >
                                         Submit

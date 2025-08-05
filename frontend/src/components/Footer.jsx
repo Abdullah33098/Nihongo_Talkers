@@ -30,7 +30,7 @@ const Footer = () => {
               <ul className="space-y-[18px]">
                 <li>Find Tutors</li>
                 <li onClick={() => navigate('/about')}>About Us</li>
-                <li>Contact Us</li>
+                <li onClick={() => navigate('/contact-us')}>Contact Us</li>
                 <li>FAQ for tutors</li>
                 <li>FAQ for Students</li>
               </ul>

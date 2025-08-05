@@ -36,7 +36,7 @@ const BecomeTutor = ({title, description, label}) => {
                         <div className="mt-3">
                             <a
                                 href="/auth/signup"
-                                className="bg-white text-blue-600 hover:bg-blue-50 font-medium py-3 px-8 rounded-full transition duration-300 inline-block"
+                                className="bg-white text-[#5183F4] hover:bg-blue-50 font-medium py-3 px-8 rounded-full transition duration-300 inline-block"
                             >
                                 {label}
                             </a>
