@@ -39,7 +39,7 @@ const ContactUs = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white">
       <div className="w-full max-w-[1440px] justify-center items-center p-4 sm:p-6 md:p-[60px] flex bg-white">
-        <div className="w-full max-w-[1320px] px-[60px] flex flex-col lg:flex-row rounded-[30px] overflow-hidden ">
+        <div className="w-full max-w-[1320px]  flex flex-col lg:flex-row rounded-[30px] overflow-hidden ">
         <div className="w-full !max-w-[1296px] flex flex-col lg:flex-row ">
           {/* Left side - Image */}
           <div className="hidden lg:block w-full lg:w-[412px]  ">

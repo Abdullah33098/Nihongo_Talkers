@@ -63,13 +63,13 @@ const TutorCard = ({ tutor }) => (
       <img
         alt={tutor.name}
         src={tutor.image}
-        className="w-full h-[170px] sm:h-[200px] lg:h-[230px] object-cover rounded-t-[10px]"
+        className="w-[268px] h-[170px]  object-cover rounded-t-[10px]"
       />
     }
     bodyStyle={{ padding: 0, flex: 1, display: 'flex', flexDirection: 'column' }}
   >
     <div className="w-full h-full mx-auto pt-[10px] px-[10px] flex flex-col gap-[4px]">
-      <p className="text-[#1A56DB] font-semibold text-[16px] sm:text-[18px] lg:text-[20px]">{tutor.name}</p>
+      <p className="text-[#5183F4] font-semibold text-[20px] ">{tutor.name}</p>
       <p className="text-[#B1B1B1] text-[14px] sm:text-[15px] lg:text-[16px]">{tutor.city}</p>
       <div className="border border-[#F7F7F7]" />
       <div>
@@ -111,9 +111,8 @@ const TutorsSection = () => (
         </p>
       </div>
     </div>
-    
-    {/* Swiper Slider */}
-    <div className="w-full bg-white ">                                                
+
+    <div className="w-full bg-white ">
       <Swiper
         spaceBetween={24}
         slidesPerView={1}

@@ -26,43 +26,49 @@ const ReasonsToLearn = () => {
   ];
 
   return (
-    <section className="bg-slate-100 py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row">
-         
-          <div className="w-full md:w-1/2 mb-8 md:mb-0">
-            <img
-              src="https://developement.d1oq8jxq519ok1.amplifyapp.com/_next/image?url=%2Fassets%2Fimages%2FReasonToLearn%2Fimage-01.png&w=640&q=75"
-              alt="Reasons to learn on Nihongo Talkers"
-              className="w-full h-auto object-cover object-top"
-              loading="lazy"
-            />
-          </div>
+    <section className="bg-slate-100 py-16 w-full">
+  <div className="max-w-[1440px] mx-auto">
+    <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
+        
+        {/* Left Image */}
+        <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+          <img
+            src="Frame 60.svg"
+            alt="Reasons to learn on Nihongo Talkers"
+            className="w-full max-w-[600px] h-auto object-cover object-top"
+            loading="lazy"
+          />
+        </div>
 
-          
-          <div className="w-full md:w-1/2 md:pl-8 flex flex-col items-start justify-center">
-            <h2 className="text-5xl font-extrabold mb-8">
-                <span className="font-bold text-[#181A20]">4 reasons to learn on</span>
-               <br /> <span className="text-[#5183F4]">Nihongo Talkers</span>
-            </h2>
+        {/* Right Content */}
+        <div className="w-full md:w-1/2 md:pl-8 flex flex-col items-start justify-center">
+          <h2 className="text-4xl sm:text-5xl font-extrabold mb-8 max-w-[600px] leading-tight">
+            <span className="text-[#181A20]">4 reasons to learn on</span>
+            <br />
+            <span className="text-[#5183F4]">Nihongo Talkers</span>
+          </h2>
 
-            <div className="space-y-8">
-              {reasons.map((reason, index) => (
-                <div key={index} className="flex items-start">
-                  <div className="bg-white p-3 rounded-md mr-4">
-                    {reason.icon}
-                  </div>
-                  <div>
-                    <p className="text-xl font-semibold mb-2">{reason.title}</p>
-                    <p className="text-[#717171] text-normal text-sm">{reason.description}</p>
-                  </div>
+          <div className="space-y-8 w-full">
+            {reasons.map((reason, index) => (
+              <div key={index} className="flex items-start">
+                <div className="bg-white p-3 rounded-md mr-4">
+                  {reason.icon}
                 </div>
-              ))}
-            </div>
+                <div>
+                  <p className="text-xl font-semibold mb-2">{reason.title}</p>
+                  <p className="text-[#717171] text-sm">{reason.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
+
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
   );
 };
 

@@ -31,18 +31,18 @@ const Blog = () => {
     },
     {
       id: 4,
-      date: "June 25, 2024",
+      date: "July 25, 2024",
       title: "The Benefits of One-on-One Tutoring vs Classroom Learning",
       excerpt: "Understand the advantages personalized tutoring offers over traditional classroom settings for optimal knowledge retention.",
-      image: "/blog4.jpg",
+      image: "/blog2.jpg",
       readTime: "7 min read"
     },
     {
       id: 5,
-      date: "June 18, 2024",
+      date: "July 18, 2024",
       title: "How to Prepare for Your First Tutoring Session",
       excerpt: "Get the most out of your first session with these preparation tips and checklist items for students and parents.",
-      image: "/blog5.jpg",
+      image: "/blog3.jpg",
       readTime: "3 min read"
     }
   ];
@@ -117,7 +117,7 @@ const Blog = () => {
             <div className="flex items-center gap-4 order-2 md:order-2">
               <button 
                 onClick={prevSlide}
-                className="w-10 h-10 flex items-center justify-center rounded-full text-blue-500  transition-colors"
+                className="w-10 h-10 flex items-center justify-center rounded-full text-[#5183F4] transition-colors"
                 aria-label="Previous slide"
               >
                 &larr;
@@ -127,14 +127,14 @@ const Blog = () => {
                   <button 
                     key={index}
                     onClick={() => goToSlide(index)}
-                    className={`w-2 h-2 rounded-full ${currentSlide === index ? 'bg-blue-500' : 'bg-blue-200'}`}
+                    className={`w-2 h-2 rounded-full ${currentSlide === index ? 'bg-[#5183F4]' : 'bg-blue-200'}`}
                     aria-label={`Go to slide ${index + 1}`}
                   />
                 ))}
               </div>
               <button 
                 onClick={nextSlide}
-                className="w-10 h-10 flex items-center justify-center rounded-full  text-blue-500  transition-colors"
+                className="w-10 h-10 flex items-center justify-center rounded-full  text-[#5183F4] transition-colors"
                 aria-label="Next slide"
               >
                 &rarr;
@@ -154,22 +154,22 @@ const Blog = () => {
                 <img 
                   src={post.image} 
                   alt={`Illustration for ${post.title}`} 
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
+                  className="w-[416px] h-full object-cover hover:scale-105 transition-transform duration-500" 
                   loading="lazy"
                 />
                 
               </div>
               <div className="p-6">
-                <p className="text-sm text-blue-500 font-medium mb-2">{post.date}</p>
-                <h3 className="text-xl font-bold mb-3 text-gray-800">
+                <p className="text-sm text-[#5183F4] font-normal mb-2 bg-[#EBF5FE] rounded-[10px] px-2 py-1 w-[95px] ">{post.date}</p>
+                <h3 className="text-xl font-semibold mb-3 text-[#181A20]">
                   {post.title}
                 </h3>
-                <p className="text-gray-600 mb-4 line-clamp-2">
+                <p className="text-[#181A20] text-base font-normal mb-4 line-clamp-2">
                   {post.excerpt}
                 </p>
                 <a 
                   href="#" 
-                  className="text-blue-500 font-medium hover:underline flex items-center gap-2 group"
+                  className="text-[#5183F4] font-normal text-base hover:underline flex items-center gap-2 group"
                   aria-label={`Read more about ${post.title}`}
                 >
                   Read More 

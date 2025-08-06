@@ -99,7 +99,7 @@ const AboutUs = () => {
               <div className="mt-3">
                 <a
                   href="/auth/signup"
-                  className="bg-white text-blue-600 hover:bg-blue-50 font-medium py-2 px-6 sm:py-3 sm:px-8 rounded-full transition duration-300 inline-block text-sm sm:text-base"
+                  className="bg-white text-[#5183F4] hover:bg-blue-50 font-medium py-2 px-6 sm:py-3 sm:px-8 rounded-full transition duration-300 inline-block text-sm sm:text-base"
                 >
                   Find Tutor
                 </a>

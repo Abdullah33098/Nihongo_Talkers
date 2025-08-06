@@ -34,7 +34,7 @@ const Navbar = () => {
     {
       key: '2',
       label: (
-        <div className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded">
+        <div className="px-4 py-2 text-[#717171] hover:bg-gray-100 rounded">
           Preview Profile as Student
         </div>
       ),
@@ -42,7 +42,7 @@ const Navbar = () => {
     {
       key: '3',
       label: (
-        <div className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded">
+        <div className="px-4 py-2 text-[#717171] hover:bg-gray-100 rounded">
           Logout
         </div>
       ),
@@ -62,12 +62,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex items-center justify-center h-[80px] bg-white">
-      <div className="w-full max-w-[1320px] flex items-center justify-between px-4 md:px-[60px] relative">
+    <div className="w-full flex items-center justify-center h-[80px] bg-white px-[60px]">
+      <div className="w-full max-w-[1320px] flex items-center justify-between px-3  relative">
         <div className="lg:hidden flex items-center">
           <button
             onClick={() => setMobileMenuVisible(true)}
-            className="p-2 text-gray-700 focus:outline-none"
+            className="p-2 text-[#717171] focus:outline-none"
           >
             <img src="Burger menu.svg" alt="Menu" className="w-[24px] h-[24px]" />
           </button>
@@ -82,7 +82,7 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Desktop Nav */}
+ 
         <div className="hidden lg:flex items-center text-[15px] font-medium text-[#181A20]">
           {navItems.map((item, index) => (
             <div
@@ -98,22 +98,13 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center space-x-2 xl:space-x-2 2xl:space-x-6">
+                      <img src="Group 3.svg" alt="User" className="w-[50px] h-[50px]" />
+
           <div className="border rounded-full p-2 cursor-pointer hover:bg-gray-100">
             <img src="shopping-bag.svg" alt="Cart" className="w-[32px] h-[32px]" />
           </div>
 
-          <Dropdown
-            menu={{ items: userMenuItems, onClick: handleUserMenuClick }}
-            trigger={['click']}
-            placement="bottomRight"
-          >
-            <div className="flex items-center border rounded-full px-3 py-1 space-x-2 cursor-pointer hover:bg-gray-100">
-              <img src="Group 3.svg" alt="User" className="w-[36px] h-[36px]" />
-              <span className="text-[14px] text-gray-800">Hironori Takeda</span>
-              <img src="Icon.svg" alt="Dropdown" className="w-[16px] h-[16px]" />
-            </div>
-          </Dropdown>
-
+          
           <Button
             onClick={() => navigate('/become-tutor')}
             type="primary"
@@ -152,7 +143,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200">
               <button
                 onClick={() => setMobileMenuVisible(false)}
-                className="p-2 text-gray-700 focus:outline-none"
+                className="p-2 text-[#717171] focus:outline-none"
               >
                 <img src="cross.svg" alt="Menu" className="w-[24px] h-[24px]" />
               </button>
@@ -208,7 +199,7 @@ const Navbar = () => {
                   <Button
                     onClick={() => navigate('/become-tutor')}
                     type="primary"
-                    className="!rounded-full font-medium text-[16px] !h-[50px] w-full"
+                    className="!rounded-full bg-[#5183F4] font-medium text-[16px] !h-[50px] w-full"
                     block
                   >
                     日本語先生になる

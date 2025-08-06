@@ -5,7 +5,7 @@ const FAQPage = () => {
   return (
     <>
       <div className="w-full max-w-[1440px] mx-auto p-4 md:p-[60px] min-h-[420px]">
-        <div className="w-full max-w-[1320px] mx-auto px-[60px]">
+        <div className="w-full max-w-[1320px] mx-auto ">
           <div className="h-[326px] sm:h-[300px] bg-[#5183F4] rounded-[30px] p-6 md:p-[50px] gap-6 relative overflow-hidden">
             <div className="relative z-10">
               <h1 className="text-[32px] md:text-[60px] font-extrabold text-white leading-tight">

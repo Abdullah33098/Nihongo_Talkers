@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaUser, FaEnvelope } from "react-icons/fa";
+import { Input,  } from "./ui/InputField";
 
 const DownloadResources = () => {
     const [formData, setFormData] = useState({
