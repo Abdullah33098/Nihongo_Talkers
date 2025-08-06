@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const RecentAnnouncements = () => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -35,27 +35,35 @@ const RecentAnnouncements = () => {
     <section className="py-[30px]  pl-[15px] bg-gray-50">
       <div className="mx-auto sm:max-w-7xl">
         <div className="flex flex-col gap-[10px] lg:flex-row lg:gap-8">
-          {/* Announcements */}
           <div className="w-full lg:w-7/12">
             <div className="mb-8">
               <h2 className="text-3xl md:text-4xl font-bold text-[#181A20] mb-4">
                 Recent <span className="text-[#5183F4]">Announcements</span>
               </h2>
               <p className="text-[#717171] text-[16px] md:text-[20px]">
-                Stay updated with our latest news and announcements in this section. Explore recent developments, events, and important information here.
+                Stay updated with our latest news and announcements in this
+                section. Explore recent developments, events, and important
+                information here.
               </p>
             </div>
 
             <div className="space-y-4">
               {announcements.map((item, index) => (
-                <div key={index} className=" overflow-hidden rounded-lg  bg-white">
+                <div
+                  key={index}
+                  className=" overflow-hidden rounded-lg  bg-white"
+                >
                   <button
                     className="flex items-center w-full text-left"
                     onClick={() => toggleAccordion(index)}
                   >
                     <div className="bg-[#5183F4] text-white rounded-l-lg p-6 text-center min-w-[90px]">
-                      <span className="block text-[26px] font-medium">{item.date}</span>
-                      <span className="block font-medium text-[20px]">{item.month}</span>
+                      <span className="block text-[26px] font-medium">
+                        {item.date}
+                      </span>
+                      <span className="block font-medium text-[20px]">
+                        {item.month}
+                      </span>
                     </div>
                     <div className="flex justify-between items-center w-full px-4 py-4">
                       <span className="font-semibold text-[18px] text-gray-800">
@@ -85,16 +93,14 @@ const RecentAnnouncements = () => {
             </div>
           </div>
 
-          {/* Image */}
-         <div className="w-full lg:w-5/12 flex justify-center lg:justify-right items-center">
-  <img
-    src="RecentAnnouncements.jpg"
-    alt="Announcement"
-    loading="lazy"
-    className="w-full max-w-[596px] h-[620px] object-cover rounded-tl-[20px] rounded-bl-[20px]"
-  />
-</div>
-
+          <div className="w-full lg:w-5/12 flex justify-center lg:justify-right items-center">
+            <img
+              src="RecentAnnouncements.jpg"
+              alt="Announcement"
+              loading="lazy"
+              className="w-full max-w-[596px] h-[620px] object-cover rounded-tl-[20px] rounded-bl-[20px]"
+            />
+          </div>
         </div>
       </div>
     </section>

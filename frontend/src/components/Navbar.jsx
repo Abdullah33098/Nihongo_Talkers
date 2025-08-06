@@ -98,8 +98,9 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center space-x-2 xl:space-x-2 2xl:space-x-6">
-                      <img src="Group 3.svg" alt="User" className="w-[50px] h-[50px]" />
-
+        <div className="border rounded-full p-2 cursor-pointer hover:bg-gray-100">
+                      <img src="Group 3 copy.svg" alt="User" className="w-[32px] h-[32px]" />
+</div>
           <div className="border rounded-full p-2 cursor-pointer hover:bg-gray-100">
             <img src="shopping-bag.svg" alt="Cart" className="w-[32px] h-[32px]" />
           </div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Input,  } from "./ui/InputField";
+import { Input  } from "./ui/InputField";
 
 const DownloadResources = () => {
     const [formData, setFormData] = useState({
