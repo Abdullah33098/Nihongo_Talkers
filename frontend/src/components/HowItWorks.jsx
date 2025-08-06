@@ -30,14 +30,14 @@ const HowItWorks = ({ title, steps }) => {
               
               <div className="sm:hidden flex flex-row gap-6 items-start w-full">
                 <div className="w-[46px] flex justify-center">
-                  <div className="w-12 h-12 rounded-full bg-[#EBF5FE] flex items-center justify-center text-xl font-semibold text-black">
+                  <div className="w-12 h-12 rounded-full bg-[#EBF5FE] flex items-center justify-center text-xl font-semibold text-[#181A20]">
                     {step.id}
                   </div>
                 </div>
 
                 <div className="flex-1 flex flex-col gap-4">
                   <div className="text-start">
-                    <p className={`font-normal text-[26px] sm:text-xl leading-relaxed ${step.titleClassName || ""}`}> {step.title}</p>
+                    <p className={`font-normal text-xl sm:text-xl leading-relaxed ${step.titleClassName || ""}`}> {step.title}</p>
 
                     <p className="text-base text-[#717171] mt-2">{step.description}</p>
                   </div>
