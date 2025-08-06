@@ -4,7 +4,7 @@ import Progressbar from '../../components/Progressbar'
 const TutorSignup = () => {
   return (
     <div className='relative'>
-      <Progressbar currentStep={0} />
+      <Progressbar currentStep={3} />
     </div>
   )
 }
