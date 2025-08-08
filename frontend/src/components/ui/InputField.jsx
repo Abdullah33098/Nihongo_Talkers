@@ -86,4 +86,62 @@ export const TextAreaField = ({
   );
 };
 
+import { useField } from "formik";
+
+export const TSPInformationInput = ({ label, helperText, ...props }) => {
+  const [field, meta] = useField(props);
+
+  return (
+    <div className="flex flex-col w-full gap-6">
+      {label && (
+        <label className="text-[#181A20] font-medium text-base">
+          {label}
+        </label>
+      )}
+      <input
+        {...field}
+        {...props}
+        className="w-full p-[15px] rounded-[10px] focus:outline-none focus:ring-2 focus:ring-[#5183F4] bg-white"
+      />
+      {helperText && (
+        <span className="text-[#B1B1B1] text-sm">{helperText}</span>
+      )}
+      {meta.touched && meta.error ? (
+        <span className="text-red-500 text-sm">{meta.error}</span>
+      ) : null}
+    </div>
+  );
+};
+
+export const SelectField = ({ label, options, ...props }) => {
+  const [field, meta] = useField(props);
+
+  return (
+    <div className="flex flex-col w-full gap-1">
+      {label && (
+        <label className="text-[#181A20] font-medium text-base">
+          {label}
+        </label>
+      )}
+      <select
+        {...field}
+        {...props}
+        className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-[#5183F4]"
+      >
+        <option value="">選択してください</option>
+        {options.map((opt) => (
+          <option key={opt} value={opt}>
+            {opt}
+          </option>
+        ))}
+      </select>
+      {meta.touched && meta.error ? (
+        <span className="text-red-500 text-sm">{meta.error}</span>
+      ) : null}
+    </div>
+  );
+};
+
+
+
 

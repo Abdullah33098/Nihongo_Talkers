@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const BecomeTutor = ({title, description, label}) => {
+    const navigate = useNavigate();
+ 
+
     return (
         <section className="relative py-16">
            
@@ -35,8 +39,8 @@ const BecomeTutor = ({title, description, label}) => {
                         </p>
                         <div className="mt-3">
                             <a
-                                href="/auth/signup"
-                                className="bg-white text-[#5183F4] hover:bg-blue-50 font-medium py-3 px-8 rounded-full transition duration-300 inline-block"
+                                onClick={() => navigate("/tutor-signup")}
+                                className="bg-white text-[#5183F4] hover:bg-blue-50 font-medium py-3 px-8 rounded-full transition duration-300 inline-block "
                             >
                                 {label}
                             </a>
