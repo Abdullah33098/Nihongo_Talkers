@@ -5,7 +5,7 @@ import TSPInformation from '../../components/TSPInformation'
 const TutorSignup = () => {
   return (
     <div className='relative'>
-      <Progressbar currentStep={0} />
+      <Progressbar currentStep={1} />
       <TSPInformation/>
     </div>
     

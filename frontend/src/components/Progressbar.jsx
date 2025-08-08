@@ -23,10 +23,12 @@ const Progressbar = ({ currentStep }) => {
               <div key={index} className="flex flex-col items-center flex-1">
                 <div
                   className={`h-2 w-full rounded-full ${
-                    index === currentStep ? "bg-[#5183F4]" : "bg-[#E9F1FF]"
+                    index <= currentStep ? "bg-[#5183F4]" : "bg-[#E9F1FF]"
                   }`}
                 />
-                <div className="mt-2 text-[14px] text-center text-[#181A20] whitespace-nowrap">
+                <div className={`mt-2 text-[14px] text-center ${
+                  index <= currentStep ? "text-[#5183F4] font-medium" : "text-[#181A20]"
+                } whitespace-nowrap`}>
                   {index + 1}. {label}
                 </div>
               </div>
@@ -38,16 +40,19 @@ const Progressbar = ({ currentStep }) => {
         <div className="hidden md:block max-w-[1320px] mx-auto px-[60px]">
           <div className="flex justify-between items-center">
             {steps.map((label, index) => {
+              const isCompleted = index < currentStep;
               const isActive = index === currentStep;
 
               return (
                 <div key={index} className="flex flex-col w-[216px] flex-1">
                   <div
                     className={`h-2 w-full rounded-full ${
-                      isActive ? "bg-[#5183F4]" : "bg-[#E9F1FF]"
+                      isCompleted || isActive ? "bg-[#5183F4]" : "bg-[#E9F1FF]"
                     }`}
                   />
-                  <div className="mt-2 text-[16px] text-left text-[#181A20] whitespace-nowrap">
+                  <div className={`mt-2 text-[16px] text-left whitespace-nowrap ${
+                    isCompleted || isActive ? "text-[#5183F4] font-medium" : "text-[#181A20]"
+                  }`}>
                     {index + 1}. {label}
                   </div>
                 </div>
