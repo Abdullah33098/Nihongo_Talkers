@@ -2,6 +2,7 @@ import React from "react";
 import { Formik, Form, Field, FieldArray } from "formik";
 import * as Yup from "yup";
 import { TSPInformationInput, SelectField } from "./ui/InputField";
+import {  useNavigate } from "react-router-dom";
 
 const validationSchema = Yup.object({
   lastNameEn: Yup.string().required("必須項目です"),
@@ -21,17 +22,23 @@ const validationSchema = Yup.object({
   ),
 });
 
+
+
 const TSPInformation = () => {
+
+  const navigate = useNavigate();
   return (
-    <div className="max-w-[1440px] mx-auto px-4 sm:px-[60px] pb-8 sm:pb-[60px]">
-      <div className="max-w-[1320px] mx-auto px-2 sm:px-3">
-        <div className="max-w-[1296px] bg-[#EBF5FE] rounded-3xl p-6 sm:p-[50px] flex flex-col items-center gap-8">
+    <div className="max-w-[1440px] mx-auto lg:px-4 sm:px-[0px] pb-8 sm:pb-[60px]">
+      <div className="max-w-[1320px] mx-auto ">
+        <div className="max-w-[1296px] bg-[#EBF5FE] rounded-3xl lg:py-[50px] sm:py-[30px] sm:px-[15px] flex flex-col items-center gap-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-[#5183F4]">
             個人情報
           </h2>
-          <p className="text-[22px] sm:text-[22px] !text-right !justify-start  font-medium text-[#181A20]">
+          <p className="text-[22px] sm:text-[22px] font-medium text-[#181A20] text-left !ml-0">
             写真
           </p>
+
+
           <div className="w-[150px] h-[150px] !items-center !justify-center overflow-hidden border-gray-300 flex-center">
             <img
               src="Objects.svg"
@@ -58,6 +65,7 @@ const TSPInformation = () => {
             validationSchema={validationSchema}
             onSubmit={(values) => {
               console.log(values);
+            
             }}
           >
             {({ values }) => (
@@ -76,12 +84,11 @@ const TSPInformation = () => {
                       placeholder="First (名)"
                     />
                   </div>
-                  <span className="text-[#B1B1B1] text-sm ">
+                  <span className="text-[#B1B1B1] text-sm">
                     フルネームはプロフィールに表示されません。英語のファーストネームのみ表示されます。
                   </span>
                 </div>
 
-              
                 <div>
                   <label className="text-[#181A20] font-medium text-[22px]">
                     名前（漢字）
@@ -98,7 +105,6 @@ const TSPInformation = () => {
                   </div>
                 </div>
 
-               
                 <div>
                   <label className="text-[#181A20] font-medium text-[22px]">
                     名前（フリガナ）
@@ -115,7 +121,6 @@ const TSPInformation = () => {
                   </div>
                 </div>
 
-              
                 <TSPInformationInput
                   name="birthDate"
                   type="date"
@@ -123,18 +128,18 @@ const TSPInformation = () => {
                   helperText="誕生日や正確な年齢はプロフィールに表示されません。年齢層のみが表示されます。"
                 />
 
-                
                 <div>
                   <label className="text-[#181A20] font-medium text-base">
                     性別
                   </label>
                   <div className="flex gap-4 mt-2">
                     {[
-                      { value: "男性", label: "男性", icon: <img src="Vector (4).svg" /> },
-                      { value: "女性", label: "女性", icon: <img src="Vector (5).svg"  /> },
+                      { value: "男性", label: "男性", className:"flex flex-col items-center", icon: <img src="Vector (4).svg" /> },
+                      { value: "女性", label: "女性", className:"flex flex-col items-center", icon: <img src="Vector (5).svg" /> },
                       {
                         value: "その他",
                         label: "その他",
+                        className:"flex flex-col items-center",
                         icon: <img src="Vector (6).svg" />,
                       },
                     ].map((g) => (
@@ -143,7 +148,7 @@ const TSPInformation = () => {
                         className={`flex items-center gap-2 border rounded-lg px-4 py-2 cursor-pointer w-[100px] justify-center transition
                           ${
                             values.gender === g.value
-                              ? "bg-[#5183F4] text-white border-[#5183F4]"
+                              ? "bg-white text-[#181A20] border-[#5183F4]"
                               : "bg-white border-gray-300"
                           }`}
                       >
@@ -159,12 +164,12 @@ const TSPInformation = () => {
                   </div>
                 </div>
 
-              
                 <SelectField
                   name="nationality"
                   label="国籍"
                   options={["日本", "アメリカ", "中国", "韓国", "その他"]}
                 />
+
                 <div>
                   <label className="text-[#181A20] font-medium text-base">
                     流暢に話せる言語
@@ -217,11 +222,11 @@ const TSPInformation = () => {
                   </FieldArray>
                 </div>
 
-                
                 <div className="flex items-end justify-end">
                   <button
                     type="submit"
                     className="w-[150px] h-[53px] bg-[#5183F4] text-white px-[38px] py-[17px] rounded-[50px] font-bold hover:bg-blue-600 transition"
+                    onClick={() => navigate("/tutor-application/step-2")}
                   >
                     次
                   </button>
