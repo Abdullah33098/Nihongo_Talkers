@@ -88,13 +88,13 @@ export const TextAreaField = ({
 
 import { useField } from "formik";
 
-export const TSPInformationInput = ({ label, helperText, ...props }) => {
+export const TSPInformationInput = ({ label, className = "", helperText, ...props }) => {
   const [field, meta] = useField(props);
 
   return (
-    <div className="flex flex-col w-full gap-6">
+    <div className={`flex flex-col w-full gap-6 p-[15px] lg:p-0 sm:p-[15px] ${className}`}>
       {label && (
-        <label className="text-[#181A20] font-medium text-base">
+        <label className={`text-[#181A20] font-medium text-base ${className}`}>
           {label}
         </label>
       )}
@@ -117,7 +117,7 @@ export const SelectField = ({ label, options, ...props }) => {
   const [field, meta] = useField(props);
 
   return (
-    <div className="flex flex-col w-full gap-1">
+    <div className="flex flex-col w-full gap-1 p-[15px] lg:p-0 sm:p-[15px]">
       {label && (
         <label className="text-[#181A20] font-medium text-base">
           {label}

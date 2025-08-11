@@ -13,6 +13,8 @@ import FAQ from "./screens/FAQ";
 import Contact_us from "./screens/Contact_us";
 import TutorSignup from "./screens/auth/TutorSignup";
 import TSBInformation from "./components/TSBInformation";
+import TSPInformation from "./components/TSPInformation";
+import TSLF from "./components/TSLF";
 const App = () => {
   return (
     <Router>
@@ -28,7 +30,8 @@ const App = () => {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact-us" element={<Contact_us />} />
         <Route path="/tutor-signup" element={<TutorSignup />} />
-        <Route path="/tutor-application/step-2" element={<TSBInformation />} />
+        <Route path="/tutor-application/step-1" element={<TSBInformation />} />
+        <Route path="/tutor-application/step-2" element={<TSLF />} />
         {/* Add more routes as needed */}
         
       </Routes>

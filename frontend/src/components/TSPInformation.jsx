@@ -30,7 +30,7 @@ const TSPInformation = () => {
   return (
     <div className="max-w-[1440px] mx-auto lg:px-4 sm:px-[0px] pb-8 sm:pb-[60px]">
       <div className="max-w-[1320px] mx-auto ">
-        <div className="max-w-[1296px] bg-[#EBF5FE] rounded-3xl lg:py-[50px] sm:py-[30px] sm:px-[15px] flex flex-col items-center gap-8">
+        <div className="max-w-[1296px] bg-[#EBF5FE] rounded-3xl py-[30px] lg:py-[50px] sm:py-[30px] sm:px-[15px] flex flex-col items-center gap-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-[#5183F4]">
             個人情報
           </h2>
@@ -71,7 +71,7 @@ const TSPInformation = () => {
             {({ values }) => (
               <Form className="flex flex-col w-full max-w-[718px] gap-6">
                 <div>
-                  <label className="text-[#181A20] font-medium text-[22px]">
+                  <label className="text-[#181A20] font-medium text-[22px] px-[15px] lg:px-0 sm:px-[15px]">
                     名前（英語）
                   </label>
                   <div className="flex gap-4 mt-1 text-base mb-6">
@@ -84,13 +84,13 @@ const TSPInformation = () => {
                       placeholder="First (名)"
                     />
                   </div>
-                  <span className="text-[#B1B1B1] text-sm">
+                  <span className="text-[#B1B1B1] text-sm px-[15px] lg:px-0 sm:px-[15px]">
                     フルネームはプロフィールに表示されません。英語のファーストネームのみ表示されます。
                   </span>
                 </div>
 
                 <div>
-                  <label className="text-[#181A20] font-medium text-[22px]">
+                  <label className="text-[#181A20] font-medium text-[22px] px-[15px] lg:px-0 sm:px-[15px]">
                     名前（漢字）
                   </label>
                   <div className="flex gap-4 mt-1 text-base">
@@ -106,7 +106,7 @@ const TSPInformation = () => {
                 </div>
 
                 <div>
-                  <label className="text-[#181A20] font-medium text-[22px]">
+                  <label className="text-[#181A20] font-medium text-[22px] px-[15px] lg:px-0 sm:px-[15px]">
                     名前（フリガナ）
                   </label>
                   <div className="flex gap-4 mt-1 text-base">
@@ -129,10 +129,10 @@ const TSPInformation = () => {
                 />
 
                 <div>
-                  <label className="text-[#181A20] font-medium text-base">
+                  <label className="text-[#181A20] font-medium text-base px-[15px] lg:px-0 sm:px-[15px]">
                     性別
                   </label>
-                  <div className="flex gap-4 mt-2">
+                  <div className="flex gap-4 mt-2  px-[15px] lg:px-0 sm:px-[15px]">
                     {[
                       { value: "男性", label: "男性", className:"flex flex-col items-center", icon: <img src="Vector (4).svg" /> },
                       { value: "女性", label: "女性", className:"flex flex-col items-center", icon: <img src="Vector (5).svg" /> },
@@ -171,7 +171,7 @@ const TSPInformation = () => {
                 />
 
                 <div>
-                  <label className="text-[#181A20] font-medium text-base">
+                  <label className="text-[#181A20] font-medium text-base px-[15px] lg:px-0 sm:px-[15px]">
                     流暢に話せる言語
                   </label>
                   <FieldArray name="languages">
@@ -215,18 +215,18 @@ const TSPInformation = () => {
                           className="text-[#5183F4] flex items-center gap-1"
                           onClick={() => push({ name: "", level: "" })}
                         >
-                          <img src="plus-circle.svg" alt="Add" className="w-6 h-6" /> 他の言語を追加する
+                          <img src="plus-circle.svg" alt="Add" className="w-6 h-6 px-[15px] lg:px-0 sm:px-[15px]" /> 他の言語を追加する
                         </button>
                       </div>
                     )}
                   </FieldArray>
                 </div>
 
-                <div className="flex items-end justify-end">
+                <div className="flex items-end justify-end px-[15px] lg:px-0 sm:px-[15px]">
                   <button
                     type="submit"
                     className="w-[150px] h-[53px] bg-[#5183F4] text-white px-[38px] py-[17px] rounded-[50px] font-bold hover:bg-blue-600 transition"
-                    onClick={() => navigate("/tutor-application/step-2")}
+                    onClick={() => navigate("/tutor-application/step-1")}
                   >
                     次
                   </button>
