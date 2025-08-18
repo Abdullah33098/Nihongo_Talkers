@@ -104,15 +104,15 @@ const TSLF = () => {
                 <div className="flex justify-between mt-8 px-[15px] lg:px-0 sm:px-[15px]">
                   <button
                     type="button"
-                    className="border border-[#5183F4] text-[#5183F4] px-8 py-3 w-[154px] rounded-full hover:bg-[#5183F4] hover:text-white transition"
-                    onClick={() => navigate('/tutor-application/step-3')}
+                    className="border border-[#5183F4] text-[rgb(81,131,244)] px-8 py-3 w-[154px] rounded-full hover:bg-[#5183F4] hover:text-white transition"
+                    onClick={() => navigate('/tutor-application/step-2')}
                   >
                     戻る
                   </button>
                   <button
                     type="submit"
                     className="bg-[#5183F4] text-white px-10 w-[154px] py-3 rounded-full hover:bg-[#3b6de0] transition"
-                    onClick={() => navigate('/tutor-application/step-2')}
+                    onClick={() => navigate('/tutor-application/step-3')}
                   >
                     次
                   </button>

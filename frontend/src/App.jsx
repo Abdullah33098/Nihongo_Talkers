@@ -15,6 +15,7 @@ import TutorSignup from "./screens/auth/TutorSignup";
 import TSBInformation from "./components/TSBInformation";
 import TSPInformation from "./components/TSPInformation";
 import TSLF from "./components/TSLF";
+import TSTInformation from "./components/TSTInformation";
 const App = () => {
   return (
     <Router>
@@ -32,6 +33,7 @@ const App = () => {
         <Route path="/tutor-signup" element={<TutorSignup />} />
         <Route path="/tutor-application/step-1" element={<TSBInformation />} />
         <Route path="/tutor-application/step-2" element={<TSLF />} />
+        <Route path="/tutor-application/step-3" element={<TSTInformation />} />
         {/* Add more routes as needed */}
         
       </Routes>
