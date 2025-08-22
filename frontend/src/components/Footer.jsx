@@ -37,7 +37,6 @@ const Footer = () => {
             </div>
 
            <div className="flex-1 min-w-[140px]">
-  <p className="font-normal mb-6 text-[#181A20] text-base">Contact</p>
 
   <div className="flex items-start gap-2">
     <img
